@@ -43,9 +43,9 @@ public class DeliveryTest {
         $("[data-test-id=success-notification]").shouldHave(Condition.text("Успешно!\n" +
                 "Встреча успешно запланирована на " + firstMeetingDate)).shouldBe(Condition.visible);
       $("[data-test-id=date] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-//        $("[data-test-id=date] input").setValue(secondMeetingDate);
-//        $(".button").click();
-//        $("[data-test-id=replan-notification]").shouldBe(Condition.visible, Duration.ofSeconds(40));
+     $("[data-test-id=date] input").setValue(secondMeetingDate);
+   $(".button").click();
+  $("[data-test-id=replan-notification]").shouldBe(Condition.visible, Duration.ofSeconds(40));
 //        $("[data-test-id=replan-notification]").shouldHave(Condition.text(
 //                "У вас уже запланирована встреча на другую дату. Перепланировать?")).shouldBe(Condition.visible, Duration.ofSeconds(40));
 //        $("[data-test-id=replan-notification] button").click();
